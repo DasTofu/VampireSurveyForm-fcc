@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1 id="title">Vampire the Masquerade Kindred Survey</h1>
+        <p id="description">Please tell us about your own personal Bloodsucker.</p>
+    </header>
+    <main><form id="survey-form">
+        <fieldset class="text-fields">
+            <label for="name" id="name-label">Player Name: <input id="name" type="text" placeholder="Alucard Orloc" required /></label>
+            <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="count-orloc@schrecknet.com" required ></label>
+            <label for="number" id="number-label">Player Age: <input id="number" type="number" min="16" max="150" placeholder="25"></label>
+        </fieldset>
+        <fieldset class="text-fields">
+            <label for="vamp-name">Kindred Name: <input id="vamp-name" type="text" placeholder="Dr. Acula" required /></label>
+            <label for="vamp-age-a">Apparent Age: <input id="vamp-age-a" type="number" min="16" max="150" placeholder="25" required /></label>
+            <label for="vamp-age-t">True Age: <input id="vamp-age-t" type="number" min="16" placeholder="125" required /></label>
+        </fieldset>
+        <fieldset class="text-fields">
+            <label for="dropdown">Choose your Clan: <select id="dropdown" required>
+                <option disabled selected value>(Choose one)</option>
+                <option>Banu Haquim</option>
+                <option>Brujah</option>
+                <option>Gangrel</option>
+                <option>Hecata</option>
+                <option>Lasombra</option>
+                <option>Malkavian</option>
+                <option>Ministry</option>
+                <option>Nosferatu</option>
+                <option>Ravnos</option>
+                <option>Salubri</option>
+                <option>Toreador</option>
+                <option>Tremere</option>
+                <option>Tzimisce</option>
+                <option>Ventrue</option>
+                <option>Caitiff</option>
+                <option>Thin-Blood</option>
+            </select></label>
+        </fieldset>
+        <fieldset class="box-fields">
+            <p>Please select your Sect-affiliation</p>
+            <label for="cammy"><input id="cammy" type="radio" name="sect" value="cammy" /> Camarilla</label>
+            <label for="anarch"><input id="anarch" type="radio" name="sect" value="anarch" /> Anarchs</label>
+            <label for="sabbat"><input id="sabbat" type="radio" name="sect" value="sabbat" /> Sabbat</label>
+            <label for="autark"><input id="autark" type="radio" name="sect" value="autark" /> Autarkis</label>
+        </fieldset>
+        <fieldset class="box-fields">
+            <p>Please select your Disciplines</p>
+            <label for="box1"><input id="box1" type="checkbox" value="1"> Animalism</label>
+            <label for="box2"><input id="box2" type="checkbox" value="2"> Auspex</label>
+            <label for="box3"><input id="box3" type="checkbox" value="3"> Blood Sorcery</label>
+            <label for="box4"><input id="box4" type="checkbox" value="4"> Celerity</label>
+            <label for="box5"><input id="box5" type="checkbox" value="5" /> Dominate</label>
+            <label for="box6"><input id="box6" type="checkbox" value="6" /> Fortitude</label>
+            <label for="box7"><input id="box7" type="checkbox" value="7" /> Obfuscate</label>
+            <label for="box8"><input id="box8" type="checkbox" value="8" /> Oblivion</label>
+            <label for="box9"><input id="box9" type="checkbox" value="9" /> Potence</label>
+            <label for="box10"><input id="box10" type="checkbox" value="10" /> Presence</label>
+            <label for="box11"><input id="box11" type="checkbox" value="11" /> Protean</label>
+            <label for="box12"><input id="box12" type="checkbox" value="12" /> Alchemy</label>
+        </fieldset>
+        <fieldset class="text-fields">
+            <p>Tell us about your embrace.</p>
+            <textarea rows="5" placeholder="It was a dark and stormy night..."></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form></main>
+    <footer>
+        <p>dasTofu November 2024</p>
+        <p>for <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> Survey Form Certification Project in the Responsive Webdesing Course</p>
+        <div id="dp-section">
+            <img id="dp-icon" src="https://images.ctfassets.net/u73tyf0fa8v1/3oBTHBZk9XmfcBlUPylvFh/673e4a6b14566548c03424ddf627b944/darkpack_logo2.png?w=3840&q=75" />
+            <p>Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit <a href="https://www.paradoxinteractive.com/games/world-of-darkness/community/dark-pack-agreement" target="_blank">worldofdarkness.com</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>

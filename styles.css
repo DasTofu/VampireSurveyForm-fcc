@@ -1,0 +1,96 @@
+body {
+    background-color: #870202;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    color: bisque;
+}
+
+h1 {
+    font-family: Playfair Display;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+fieldset {
+    margin: 5px auto;
+    border: #000000 double 6px;
+    background-color: #d6cea2;
+    color: black;
+    width: 80%;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.text-fields label, .text-fields input, .text-fields select {
+    display: flex;
+    align-items: center;
+}
+
+.text-fields input, .text-fields select {
+    flex: 1;
+    margin-left: 4px;
+}
+
+textarea {
+    display: block;
+    width: 80%;
+    resize: vertical;
+}
+
+.box-fields {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+fieldset p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+input, textarea, select {
+    font-family: "Cormorant Garamond";
+    font-weight: 500;
+    font-size: 18px;
+    margin: 2px auto;
+}
+
+input[type="submit"]{
+    font-family: Playfair Display;
+    font-weight: 600;
+    color: #870202;
+    display: block;
+    margin: 10px auto;
+    background-color: #d6cea2;
+    width: 80%;
+    height: 35px;
+    min-width: 250px;
+    max-width: 550px;
+}
+
+#dp-section {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#dp-icon {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+a {
+    color: antiquewhite;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+a:visited {
+    color: rgb(87, 87, 87);
+}
